@@ -1,66 +1,87 @@
-*{
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-image: linear-gradient(to left,#42275a, #9d8ead); */
+
+    font-size: 20px;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.container{
-    box-shadow: 0 0 4px 1px rgb(179, 169,169);
+
+.header {
+ 
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    box-shadow: 0 0 4px 1px rgb(179, 169, 169);
     width: 400px;
     height: 350px;
     border-radius: 10px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
-.container p{
-    color: rgb(20,94,82);
+/* .container p {
+    color: rgb(20, 94, 82);
     margin: 10px;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+} */
 
-.date-container label{
+.date-container label {
     font-size: larger;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 20px;
     font-weight: bolder;
+    margin-top: 10px
 }
 
-#birthDate,#currentDate{
+#birthDate,
+#currentDate {
     width: 140px;
     height: 40px;
     border: none;
-    box-shadow: 0 0 2px 1px rgb(179, 169,169);
+    box-shadow: 0 0 2px 1px rgb(179, 169, 169);
     border-radius: 100px;
     margin-top: 10px;
     padding: 4px;
-    font-family:  'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(55, 85, 103);
     font-size: large;
 }
 
-#calculatBtn{
+#calculatBtn {
+   
+}
+.calbtn{
     width: 100px;
     height: 50px;
-    margin-top: 20px;
-    font-size: larger ;
+    text-align: center;
+    margin-left: 10px;
+    font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     border: none;
     outline: none;
     border-radius: 5px;
-    box-shadow: 1px 3px 3px ;
+    box-shadow: 1px 3px 3px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#calculatBtn:active{
-box-shadow: 0 0 0 0 ;
+#calculatBtn:active {
+    box-shadow: 0 0 0 0; 
 }

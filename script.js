@@ -3,16 +3,21 @@ let currentDate=document.getElementById("currentDate");
 let output=document.getElementById("output");
 
 document.getElementById("calculatBtn").addEventListener("click",()=>{
-    if(dob==""|| currentDate==""){
+    // console.log("clicked " , dob.value,currentDate.value);
+    if(dob===" " ){
         output.innerHtml("First Select Date");
+        alert("enter")
+        console.log("enter")
 
     }
+
     else{
         calculateAgeDifference(dob.value,currentDate.value);
     }
 })
 
 function calculateAgeDifference(start,end){
+  
     let dobYear=parseInt(start.substring(0,4),10); //base 10
     let dobMonth=parseInt(start.substring(5,7),10);
     let dobDate=parseInt(start.substring(8,10),10);
